@@ -1,0 +1,17 @@
+{
+    "name": "Show Ticketing",
+    "short_name": "Show Ticketing",
+    "description": "Show Tickets Booking Application.",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#42b883",
+    "icons": [
+      {
+        "src": "./logo3.png",
+        "sizes": "500x290",
+        "type": "image/png"
+      }
+    ]
+  }
+  
