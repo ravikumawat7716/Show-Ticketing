@@ -101,5 +101,5 @@ You're now ready to use the Show-Ticketing application locally. Access it in you
 Enjoy using the application for booking show tickets, and happy coding!
 
 
-## API Documentatuion
+## API Documentation
 Link - https://documenter.getpostman.com/view/25106396/2s9Xy6qVDy
