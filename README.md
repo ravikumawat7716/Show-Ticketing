@@ -99,3 +99,7 @@
 You're now ready to use the Show-Ticketing application locally. Access it in your web browser at [http://localhost:8080/](http://localhost:8080/).
 
 Enjoy using the application for booking show tickets, and happy coding!
+
+
+## API Documentatuion
+Link - https://documenter.getpostman.com/view/25106396/2s9Xy6qVDy
