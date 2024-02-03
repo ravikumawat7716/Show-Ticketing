@@ -1,3 +1,4 @@
+
 <template>
     <div>
       <SummaryNavbar></SummaryNavbar>
@@ -30,7 +31,7 @@
           // Set up the Axios configuration
           const tokenValue = JSON.parse(token || null);
           const authValue = "Bearer " + tokenValue;
-          const url = "http://127.0.0.1:5000/dailyreport"; 
+          const url = `${this.$globalData.backendUrl}/dailyreport`; 
           const config = {
             headers: {
               'Content-Type': 'application/json',
@@ -58,7 +59,7 @@
           // Set up the Axios configuration
           const tokenValue = JSON.parse(token || null);
           const authValue = "Bearer " + tokenValue;
-          const url = "http://127.0.0.1:5000/monthlyreport"; 
+          const url = `${this.$globalData.backendUrl}/monthlyreport`; 
           const config = {
             headers: {
               'Content-Type': 'application/json',

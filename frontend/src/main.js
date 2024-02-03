@@ -5,6 +5,11 @@ import router from './routers'
 import { getUserRole } from './auth';
 import './registerServiceWorker'
 
+const globalData = {
+  
+  backendUrl: "http://127.0.0.1:8000",
+};
+
 router.beforeEach((to, from, next) => {
   const requiresAuth = to.meta.requiresAuth;
   const requiredRoles = to.meta.roles;
@@ -20,4 +25,9 @@ router.beforeEach((to, from, next) => {
   next(); // Allow access
 });
 
-createApp(App).use(router).mount('#app');
+const app = createApp(App)
+
+app.config.globalProperties.$globalData = globalData;
+
+app.use(router)
+app.mount('#app');

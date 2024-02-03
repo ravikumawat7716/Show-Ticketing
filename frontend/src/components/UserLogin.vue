@@ -30,7 +30,7 @@ export default {
         async loginUser() {
             try {
                 this.loading = true;
-                const url = 'http://127.0.0.1:5000/login';
+                const url = `${this.$globalData.backendUrl}/login`;
                 const data = {
                     email: this.email,
                     password: this.password,

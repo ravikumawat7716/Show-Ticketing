@@ -106,8 +106,8 @@
         } else {
           let tokenValue = JSON.parse(token || null);
           let authValue = "Bearer " + tokenValue
-          const url = "http://127.0.0.1:5000/venue";
-          const url2 = "http://127.0.0.1:5000/show";
+          const url = `${this.$globalData.backendUrl}/venue`;
+          const url2 = `${this.$globalData.backendUrl}/show`;
           const config = {
             headers: {
               'Content-Type': 'application/json',

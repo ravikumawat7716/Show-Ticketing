@@ -35,7 +35,7 @@ export default {
     async registerUser() {
       try {
         this.loading = true;
-        const url = 'http://127.0.0.1:5000/register';
+        const url = `${this.$globalData.backendUrl}/register`;
         const data = {
           name: this.name,
           email: this.email,

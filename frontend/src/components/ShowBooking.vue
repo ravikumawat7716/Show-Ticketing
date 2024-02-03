@@ -50,7 +50,7 @@ export default {
             const id = parseInt(this.$route.params.sid)
                 let tokenValue = JSON.parse(token || null);
                 let authValue = "Bearer " + tokenValue
-                const url = 'http://127.0.0.1:5000/book';
+                const url = `${this.$globalData.backendUrl}/book`;
                 const config = {
                     headers: {
                         'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ export default {
                 const id = parseInt(this.$route.params.sid)
                 let tokenValue = JSON.parse(token || null);
                 let authValue = "Bearer " + tokenValue
-                const url = `http://127.0.0.1:5000/fetch_showdata?id=${id}`;
+                const url = `${this.$globalData.backendUrl}/fetch_showdata?id=${id}`;
                 const config = {
                     headers: {
                         'Content-Type': 'application/json',

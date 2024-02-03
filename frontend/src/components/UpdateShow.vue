@@ -41,7 +41,7 @@ export default {
                 let tokenValue = JSON.parse(token || null);
                 let authValue = "Bearer "+tokenValue
                 const id = parseInt(this.$route.params.id)
-                const url = 'http://127.0.0.1:5000/show';
+                const url = `${this.$globalData.backendUrl}/show`;
                 const data = {
                     id: id,
                     Show_Name: this.show.Show_Name,
@@ -73,7 +73,7 @@ export default {
         let token = localStorage.getItem("Auth-Token");
         let tokenValue = JSON.parse(token || null);
         let authValue = "Bearer "+tokenValue
-        const url = "http://127.0.0.1:5000/show";
+        const url = `${this.$globalData.backendUrl}/show`;
         const config = {
                     headers: {
                         'Content-Type': 'application/json',

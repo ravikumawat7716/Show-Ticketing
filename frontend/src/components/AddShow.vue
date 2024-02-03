@@ -67,7 +67,7 @@ export default {
                 let tokenValue = JSON.parse(token || null);
                 let authValue = "Bearer " + tokenValue
                 const id = parseInt(this.$route.params.id)
-                const url = 'http://127.0.0.1:5000/show';
+                const url = `${this.$globalData.backendUrl}/show`;
                 const data = {
                     Show_Name: this.show.Show_Name,
                     Rating: this.show.Rating,
