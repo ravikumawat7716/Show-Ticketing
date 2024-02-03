@@ -159,6 +159,7 @@
     margin: 10px;
     padding: 10px;
     background-color: #aae15a;
+    /* background-color: rgb(231, 254, 85); */
     height: auto;
     box-sizing: border-box;
     border-radius: 8px;
@@ -166,7 +167,10 @@
   }
   
   .venuetitle {
-    background-color: #4de873;
+    /* background-color: #4de873; */
+    /* background-color: rgb(231, 254, 85);
+    background-color: blue; */
+    background-color: #aae15a;
     width: 100%;
     margin: 0px;
     text-align: center;

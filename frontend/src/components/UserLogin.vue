@@ -48,7 +48,7 @@ export default {
                         localStorage.setItem("name", JSON.stringify(response.data.username))
                         localStorage.setItem("user-role", JSON.stringify(response.data.userrole))
                         this.loading = false;
-                        alert('You are logged in.')
+                        // alert('You are logged in.')
                     }
                     let userRole = JSON.stringify(response.data.userrole)
                     let Role = JSON.parse(userRole || {});

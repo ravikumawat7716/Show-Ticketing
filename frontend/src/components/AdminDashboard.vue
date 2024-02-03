@@ -58,7 +58,7 @@ export default {
             let token = localStorage.getItem("Auth-Token");
             let tokenValue = JSON.parse(token || null);
             let authValue = "Bearer " + tokenValue
-            const url = "`${this.$globalData.backendUrl}/venue`venue";
+            const url = `${this.$globalData.backendUrl}/venue`;
             const data = {
                 id: id
             }
@@ -81,7 +81,7 @@ export default {
             let token = localStorage.getItem("Auth-Token");
             let tokenValue = JSON.parse(token || null);
             let authValue = "Bearer " + tokenValue
-            const url = "`${this.$globalData.backendUrl}/venue`show";
+            const url = `${this.$globalData.backendUrl}/show`;
             const data = {
                 id: id
             }
@@ -174,6 +174,8 @@ export default {
     padding-top: 1px;
     padding-bottom: 1px;
     height: auto;
+    /* background-color: #aae15a; */
+    /* background-color: rgb(231, 254, 85); */
     background-color: #aae15a;
     text-align: center;
     border-radius: 5px;

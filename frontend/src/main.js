@@ -7,7 +7,7 @@ import './registerServiceWorker'
 
 const globalData = {
   
-  backendUrl: "http://127.0.0.1:8000",
+  backendUrl: "http://127.0.0.1:5000",
 };
 
 router.beforeEach((to, from, next) => {

@@ -4,6 +4,9 @@
 /backend/.env1
 /backend/instance
 
+__pycache__ 
+*.pyc
+
 
 
 # frontend ---------------
