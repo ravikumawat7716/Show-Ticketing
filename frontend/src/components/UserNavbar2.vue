@@ -31,7 +31,6 @@
     </script>
     <style>
     .nav{
-        /* background-color: yellow; */
         background-color: #aae15a;
         overflow: hidden;
     }

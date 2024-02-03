@@ -31,8 +31,6 @@ export default{
 </script>
 <style>
 .nav{
-    /* background-color: yellow; */
-    /* background-color: rgb(231, 254, 85); */
     background-color: #aae15a;
     overflow: hidden;
 }
