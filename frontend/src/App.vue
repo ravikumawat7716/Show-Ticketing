@@ -22,7 +22,7 @@ h1{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: #3c555b;
+  background-color: #000000;
   margin-top: 0px;
   flex: 1;
 }

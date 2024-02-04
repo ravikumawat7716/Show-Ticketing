@@ -261,7 +261,7 @@ router-link {
     margin-right: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
     height: auto;
     box-sizing: border-box;
     border-radius: 8px;

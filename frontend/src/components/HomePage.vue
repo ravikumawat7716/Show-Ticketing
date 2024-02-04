@@ -147,7 +147,7 @@
     margin-right: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color:#0d2329;
+    background-color:#000000;
     height: auto;
     box-sizing: border-box;
     border-radius: 8px;
