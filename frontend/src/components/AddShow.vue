@@ -67,7 +67,7 @@ export default {
                 let tokenValue = JSON.parse(token || null);
                 let authValue = "Bearer " + tokenValue
                 const id = parseInt(this.$route.params.id)
-                const url = `${this.$globalData.backendUrl}/show`;
+                const url = `${process.env.VUE_APP_BACKEND_URL}/show`;
                 const data = {
                     Show_Name: this.show.Show_Name,
                     Rating: this.show.Rating,

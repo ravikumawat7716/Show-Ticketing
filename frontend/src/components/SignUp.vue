@@ -35,7 +35,7 @@ export default {
     async registerUser() {
       try {
         this.loading = true;
-        const url = `${this.$globalData.backendUrl}/register`;
+        const url = `${process.env.VUE_APP_BACKEND_URL}/register`;
         const data = {
           name: this.name,
           email: this.email,

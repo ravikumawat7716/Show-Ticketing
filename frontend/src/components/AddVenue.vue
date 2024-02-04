@@ -38,7 +38,7 @@ export default {
                 let token = localStorage.getItem("Auth-Token");
                 let tokenValue = JSON.parse(token || null);
                 let authValue = "Bearer "+tokenValue
-                const url = `${this.$globalData.backendUrl}/venue`;
+                const url = `${process.env.VUE_APP_BACKEND_URL}/venue`;
                 const data = {
                     Venue_Name: this.venue.venueName,
                     Place: this.venue.place,

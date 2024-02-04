@@ -20,6 +20,7 @@ __pycache__
 # local env files
 /frontend/.env.local
 /frontend/.env.*.local
+/frontend/.env
 
 # Log files
 /frontend/npm-debug.log*

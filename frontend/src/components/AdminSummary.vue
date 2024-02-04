@@ -31,7 +31,7 @@
           // Set up the Axios configuration
           const tokenValue = JSON.parse(token || null);
           const authValue = "Bearer " + tokenValue;
-          const url = `${this.$globalData.backendUrl}/dailyreport`; 
+          const url = `${process.env.VUE_APP_BACKEND_URL}/dailyreport`; 
           const config = {
             headers: {
               'Content-Type': 'application/json',
@@ -59,7 +59,7 @@
           // Set up the Axios configuration
           const tokenValue = JSON.parse(token || null);
           const authValue = "Bearer " + tokenValue;
-          const url = `${this.$globalData.backendUrl}/monthlyreport`; 
+          const url = `${process.env.VUE_APP_BACKEND_URL}/monthlyreport`; 
           const config = {
             headers: {
               'Content-Type': 'application/json',

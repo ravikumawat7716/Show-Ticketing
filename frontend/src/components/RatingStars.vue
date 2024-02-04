@@ -50,7 +50,7 @@ export default {
             let token = localStorage.getItem("Auth-Token");
             let tokenValue = JSON.parse(token || null);
             let authValue = "Bearer " + tokenValue
-            const url = `${this.$globalData.backendUrl}/rate`;
+            const url = `${process.env.VUE_APP_BACKEND_URL}/rate`;
             const data = {
                 "booking_id": id,
                 "stars": this.currentRating

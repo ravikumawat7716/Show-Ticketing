@@ -50,7 +50,7 @@ export default {
             else {
                 let tokenValue = JSON.parse(token || null);
                 let authValue = "Bearer " + tokenValue
-                const url = `${this.$globalData.backendUrl}/book`;
+                const url = `${process.env.VUE_APP_BACKEND_URL}/book`;
                 const config = {
                     headers: {
                         'Content-Type': 'application/json',

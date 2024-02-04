@@ -58,7 +58,7 @@ export default {
             let token = localStorage.getItem("Auth-Token");
             let tokenValue = JSON.parse(token || null);
             let authValue = "Bearer " + tokenValue
-            const url = `${this.$globalData.backendUrl}/venue`;
+            const url = `${process.env.VUE_APP_BACKEND_URL}/venue`;
             const data = {
                 id: id
             }
@@ -81,7 +81,7 @@ export default {
             let token = localStorage.getItem("Auth-Token");
             let tokenValue = JSON.parse(token || null);
             let authValue = "Bearer " + tokenValue
-            const url = `${this.$globalData.backendUrl}/show`;
+            const url = `${process.env.VUE_APP_BACKEND_URL}/show`;
             const data = {
                 id: id
             }
@@ -115,8 +115,8 @@ export default {
         let token = localStorage.getItem("Auth-Token");
         let tokenValue = JSON.parse(token || null);
         let authValue = "Bearer " + tokenValue;
-        const url = `${this.$globalData.backendUrl}/venue`;
-        const url2 = `${this.$globalData.backendUrl}/show`;
+        const url = `${process.env.VUE_APP_BACKEND_URL}/venue`;
+        const url2 = `${process.env.VUE_APP_BACKEND_URL}/show`;
         const config = {
             headers: {
                 'Content-Type': 'application/json',
