@@ -147,7 +147,8 @@
     margin-right: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-color:#0d2329;
     height: auto;
     box-sizing: border-box;
     border-radius: 8px;
@@ -158,7 +159,7 @@
     flex: 0 0 calc(33.33% - 20px);
     margin: 10px;
     padding: 10px;
-    background-color: #aae15a;
+    background-color: aliceblue;
     /* background-color: rgb(231, 254, 85); */
     height: auto;
     box-sizing: border-box;
@@ -170,7 +171,8 @@
     /* background-color: #4de873; */
     /* background-color: rgb(231, 254, 85);
     background-color: blue; */
-    background-color: #aae15a;
+    /* background-color: #aae15a; */
+    background-color: aliceblue;
     width: 100%;
     margin: 0px;
     text-align: center;
