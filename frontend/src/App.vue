@@ -22,7 +22,7 @@ h1{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: #000000;
+  background-color: #0d2329;
   margin-top: 0px;
   flex: 1;
 }
@@ -110,7 +110,7 @@ router-link{
     margin-right: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: aliceblue;
+    background-color: #0d2329;
     height: auto;
     box-sizing: border-box;
     border-radius: 8px;
