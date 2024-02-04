@@ -5,10 +5,10 @@ import router from './routers'
 import { getUserRole } from './auth';
 import './registerServiceWorker'
 
-const globalData = {
+// const globalData = {
   
-  backendUrl: "http://127.0.0.1:5000",
-};
+//   backendUrl: "http://127.0.0.1:5000",
+// };
 
 router.beforeEach((to, from, next) => {
   const requiresAuth = to.meta.requiresAuth;

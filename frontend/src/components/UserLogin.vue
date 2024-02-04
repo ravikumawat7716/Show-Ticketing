@@ -30,7 +30,8 @@ export default {
         async loginUser() {
             try {
                 this.loading = true;
-                const url = `${this.$globalData.backendUrl}/login`;
+                const url = `${process.env.VUE_APP_BACKEND_URL}/login`;
+                console.log(url)
                 const data = {
                     email: this.email,
                     password: this.password,
