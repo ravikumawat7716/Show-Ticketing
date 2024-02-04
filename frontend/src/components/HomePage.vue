@@ -147,7 +147,6 @@
     margin-right: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    /* background-color: aliceblue; */
     background-color:#0d2329;
     height: auto;
     box-sizing: border-box;
