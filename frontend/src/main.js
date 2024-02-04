@@ -27,7 +27,7 @@ router.beforeEach((to, from, next) => {
 
 const app = createApp(App)
 
-app.config.globalProperties.$globalData = globalData;
+// app.config.globalProperties.$globalData = globalData;
 
 app.use(router)
 app.mount('#app');
