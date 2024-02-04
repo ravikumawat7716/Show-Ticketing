@@ -1,6 +1,6 @@
 <template>
     <UserNavbar></UserNavbar>
-    <h3>Hello {{ name }}!, Welcome Show Ticket Booking App</h3>
+    <h3>Hello {{ name }}!, Welcome to Show Ticket Booking App</h3>
     <select class="searchoption" v-model="searchOption">
     <option value="showName">Show Name</option>
     <option value="venueName">Venue Name</option>
@@ -147,7 +147,7 @@
     margin-right: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color:#000000;
+    background-color:#0d2329;
     height: auto;
     box-sizing: border-box;
     border-radius: 8px;
