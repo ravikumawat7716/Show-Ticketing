@@ -5,6 +5,11 @@ on:
     branches: ["main"]  # Change to your branch name if needed
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write  # Ensure this permission is granted to your token
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -14,7 +19,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'  # Update to your desired Node.js version
-      - name: Change directory to frontend
+      - name: Change directory to frontend (optional)
         uses: actions/checkout@v4  # Checkout the specific directory (optional)
       - working-directory: frontend  # Set working directory for subsequent steps
         run: |
