@@ -23,6 +23,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}  # Use the secret name where your token is stored
           source: ./dist  # Update path if your build output is in a different folder
           branch: gh-pages  # Change to your desired branch for deployment (optional)
