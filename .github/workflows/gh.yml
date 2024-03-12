@@ -25,6 +25,8 @@ jobs:
         run: |
           npm install  # Install dependencies within the frontend folder
           npm run build  # Build the frontend project
+      - name: Test
+        run : ls
       - name: Upload frontend build artifacts
         uses: actions/upload-artifact@v4
         with:
