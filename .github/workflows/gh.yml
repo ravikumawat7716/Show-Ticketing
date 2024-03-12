@@ -25,16 +25,14 @@ jobs:
         run: |
           npm install  # Install dependencies within the frontend folder
           npm run build  # Build the frontend project
-      - name: Test
-        run : ls
       - name: Upload frontend build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: frontend-build  # Customize the artifact name if needed
-          path: ./dist  # Update path if your build output is in a different folder
+          name: frontend-build  
+          path: ./frontend/dist  
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifact_name: frontend-build  # Reference the uploaded artifact name
-          branch: gh-pages  # Optional: deployment branch
+          artifact_name: frontend-build  
+          branch: gh-pages  
